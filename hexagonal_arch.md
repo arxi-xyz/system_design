@@ -25,11 +25,11 @@ Mainly hexagonal architecture maintain 3 parts yet. **Port, Hexagon, Adaptor**
 - **inbound ports:** Inbound port is interface that describe the application usecases can give to driver.
 - **outbound ports:** Outbound port is interface that describe what feature application expect from external systems
 
-## Adapter
+### Adapter
 
 **Adapter:** Adapter implements ports defined by the core (business logic). its like translator between inbound/outbound technology.You may have multiple adapters per port, including test adapters (fake/mock implementations).Ports are defined inside the core, adapters live outside and depend on those ports..
 
-## Main Component
+### Main Component
 
 **Main Component:** Beside of these explanation we need a main component in this architecture. this component has this duty to runs at startup and build whole system by these instructions:
 
